@@ -1,0 +1,151 @@
+@media only screen and (max-width:1200px){ 
+    .hero-text{
+      text-align: center;
+      width:100%;
+      }
+}
+
+@media only screen and (max-width:1023px){ 
+  h2{
+    font-size: 130%;
+  }
+  .first-content h3 {
+    padding: 20px 5px;
+}
+  .about-section{
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .footer-section{
+    padding-left:2%;
+  }
+  .first-section p {
+    line-height: 145%;
+    padding: 10px 10px 15px;
+    font-size: 90%;
+}
+.content-box{
+  padding-left:24%;
+  font-size:13px;
+  }
+.contact-us{
+  width:80%;
+  padding: 0 10px;
+}
+.site-map-div div {
+  margin: 55px 0 0 0px;
+}
+.footer-site-map a:link, .footer-site-map a:visited{
+  font-size:50%;
+  padding-left:2%;
+ }
+}
+
+@media only screen and (max-width:768px){ 
+  .first-content h3 {
+    padding: 20px 5px;
+}
+h3{padding: 20px 15px;}
+  .content-box p {
+   font-size: 15px;
+  }
+  .about-section{
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .contact-us{
+    width:100%;
+    padding: 0 10px;
+  }
+  .contact-section{
+    margin-left:5%;
+  }
+  .site-map-div div {
+    margin: 55px 0 0 0px;
+}
+.main-nav{
+  display:none;
+  float: left;
+  margin-top:10px;
+}
+.main-nav li{display:block}
+
+.main-nav li a:link, .main-nav li a:active{
+  display:block;
+  border:0;
+  font-size:90%;
+}
+
+.mobile-nav-icon{
+  display: inline-block;
+  margin-top:10px;
+  margin-right:10px;
+}
+
+.sticky-nav .mobile-nav-icon i{
+  color:#191919;
+}
+.sticky-nav .mobile-nav-icon{
+  margin-top:10px;
+  margin-right:10px;
+}
+.sticky-nav .main-nav li a:link, .sticky-nav .main-nav li a:active{
+  display:block;
+  border:0;
+  font-size:90%;
+}
+}
+
+@media only screen and (max-width:480px){ 
+  section{
+  /* padding:3%; */
+  }
+  h1{
+    font-size: 100%;
+    margin-bottom:10%;
+  }
+  h2{
+    font-size: 80%;
+    line-height: 140%;
+    }
+    h3{
+      font-size: 70%;
+      text-align: center;
+      margin-top: 4%;
+    }
+  .hero-text{
+    text-align: center;
+    }
+      .about-content{
+        margin: 0 20%;
+        width:100%;
+        }
+        .about-content h3{text-align: left;}
+        .contact-us {
+          width: 90%;
+          font-size:90%;
+      }
+      .message-send{font-size: 88%;}
+      
+      input[type="submit"]{ 
+        width:70%;
+      }
+      .footer-site-map a:link, .footer-site-map a:visited{
+       font-size:50%;
+       padding-left:10%;
+      }
+      .site-map-div{
+     display: none;
+      }
+      .content-box{
+        padding-left:25%;
+        font-size:55%;
+        }
+        .content-box div{
+          left:10%;
+        }
+        .social-works{
+          margin-left:30%;
+        }
+        .social-media{text-align:center;}
+    }

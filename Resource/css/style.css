@@ -1,0 +1,377 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+html,body{
+  background-color: #fff;
+  color:#dad5d5;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+.row{
+  max-width: 1140px;
+  margin:0 auto;
+}
+section{ margin:80px 0;}
+img{
+  width:100%;
+  height:auto;
+}
+/* .clearFix{ zoom: 1;}
+.clearFix:after{
+  content: ".";
+  clear: both;
+  display:block;
+  height:0;
+  visibility: hidden;
+
+} */
+/*-----------------------------------*/
+/*Reuseable component*/
+/*-----------------------------------*/
+h1,h2,h3{
+  text-transform: uppercase;
+  font-weight:300;
+}
+h3, h4{
+  font-size:100%;
+  color:#baaeae;
+}
+h1{
+  font-size:200%;
+  color:#f7f2f2;
+}
+h2{
+text-align: center;
+color:#2d2020;
+font-size:150%;
+margin-bottom:30px;
+}
+h2:after{
+  content:" ";
+  height:3px;
+  width:10%;
+  margin:0 auto;
+  margin-top:20px;
+  display:block;
+  /* background-color:#c85151; */
+  border-bottom: 5px dotted #191919;
+}
+h3{
+  font-style:italic;
+  font-size:90%;
+}
+.btn{
+ padding:10px 20px;
+ margin-left:10px;
+ border-radius:5px;
+}
+.btn-learn-more{
+  background-color:#99a8ce;
+  border: 1px solid #99a8ce;
+}
+.btn-donate{
+  background-color:none;
+  border: 1px solid #99a8ce;
+}
+/*Link*/
+a:link, a:visited{
+  text-decoration: none;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.2s border 0.2s;
+}
+a:hover, a:active{
+  background-color:#5679d2;
+  border:1px solid rgba(255, 255, 255, 0.824);
+}
+/* .box{ padding:2%;} */
+/*-----------------------------------*/
+/*Header text*/
+/*-----------------------------------*/
+header{
+  background-image:linear-gradient(rgba(179, 173, 173, 0.507),rgba(179, 173, 173, 0.507)) ,url(img/milky-way.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+}
+.hero-text{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+/*logo*/
+.logo{
+  display:inline;
+}
+.white-logo{
+float:left;
+margin:40px 50px;
+text-transform: uppercase;
+width:auto;
+color:#fff;
+}
+.black-logo{
+  float:left;
+  margin:20px 50px;
+  text-transform: uppercase;
+  color:#191919;
+  width:auto;
+  }
+.black-logo{
+  display: none;
+}
+/*-----------------------------------*/
+/*Navigation bar*/
+/*-----------------------------------*/
+/*main-nav*/
+.main-nav{
+  list-style:none;
+  margin-top:55px;
+  float:right;
+}
+.main-nav li{
+  display:inline-block;
+  padding-right:50px;
+}
+.main-nav li a:link, .main-nav li a:visited{
+  text-decoration:none;
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing:2px;
+  padding: 8px 0;
+  border-bottom:2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover, .main-nav li a:active{
+  border:none;
+  border-bottom:2px solid #191919;
+  background-color:transparent;
+}
+/*mobile-nav*/
+.mobile-nav-icon{
+float:right;
+margin-top:30px;
+cursor: pointer;
+display: none;
+}
+.mobile-nav-icon i{
+  font-size:200%;
+  color:#fff;
+}
+/*sticky-nav*/
+.sticky-nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:rgb(255, 255, 255);
+  color:#dad5d5;
+  z-index: 999;
+}
+.sticky-nav .main-nav{
+  margin:20px 0;
+}
+.sticky-nav .main-nav li a:link, .main-nav li a:visited{
+  padding: 10px 0;
+  color:#dad5d5;
+}
+.sticky-nav .white-logo{display: none;}
+.sticky-nav .black-logo{display:block;} 
+
+/*-----------------------------------*/
+/*first-section*/
+/*-----------------------------------*/
+.first-section{ 
+  color:#514f4f;
+  padding: 5%;
+}
+.first-section .box{
+  background-color: #dad5d5;
+  border-radius:5px;
+}
+.first-section h3{
+  padding: 20px 25px;
+}
+.first-section p{
+ line-height: 145%;
+ padding:10px 0 10px 25px;
+}
+
+/*-----------------------------------*/
+/*about-section*/
+/*-----------------------------------*/
+.about-section{
+background-image:linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.714)), url(img/milky-way.jpg);
+padding:80px 0;
+}
+
+.about-content a{
+background-color: transparent;
+border:none;
+}
+.about-content p,.about-content h3 {
+  margin: 50px 0;
+  width:70%;
+  }
+  .about-content p{
+    line-height: 145%;
+  }
+.about-img{
+border-radius: 5px;
+}
+/*-----------------------------------*/
+/*contact-section*/
+/*-----------------------------------*/
+.contact-section{
+ padding:80px 0;
+}
+.contact-us{
+  width:60%;
+  margin:0 auto;
+  /* padding: 0 60px; */
+  text-transform: capitalize;
+}
+label{
+  display:block;
+}
+input[type=text],
+input[type=email],
+textarea{
+  background-color: #191919;
+  color:#fff;
+}
+.message-send{
+  margin-top:20px;
+}
+textarea{
+  width:91%;
+  height: 110px;
+}
+input[type=submit]{
+  float:right;
+  margin-top:20px;
+  margin-right:62px;
+  width:15%;
+  text-transform:uppercase;
+  font-size: 90%;
+  padding: 5px 0;
+  cursor: pointer;
+}
+/*-----------------------------------*/
+/*footer-section*/
+/*-----------------------------------*/
+.footer-section{
+  padding: 80px 0;
+  background-color: #191919;
+  margin-bottom: 0;
+}
+.footer-site-map{
+  color:#baaeae;
+  margin-left:80px;
+}
+
+.footer-site-map a:link, .footer-site-map a:visited{
+  color:#baaeae;
+ line-height: 140%;
+ font-size:60%;
+ display:inline-block;
+ padding-left:10px;
+}
+.footer-site-map a:first-child{
+  padding-left:0;
+}
+.footer-site-map a:hover, .footer-site-map a:active{
+background-color: transparent;
+border:none;
+}
+.site-map-div div{
+  width:50px;
+  height:50px;
+  background-color: red;
+  border:2px solid #fff;
+  margin:55px 0 0 10px;
+  border-radius:50%;
+  display:inline-block;
+}
+.site-map-div div:first-child{
+  margin-left:0;
+  background-color: #2a2a2a;
+}
+#div-2{background-color: #3b3b3b; }
+#div-3{background-color: #5d5d5d; }
+#div-4{background-color: #6e6e6e; }
+
+.latest-articles{
+  /* margin-left:20px; */
+}
+.content-box{
+position: relative;
+margin-top: 20px;
+padding-left:65px;
+/* line-height: 120%; */
+font-size:80%;
+}
+.content-box p{
+width:80%;
+margin-top:10px;
+}
+.content-box div{
+  width:50px;
+  height:50px;
+  background-color:#baaeae;
+  position: absolute;
+  border-radius: 2px;
+  top:0;
+  left:0;
+  margin-top:5px;
+}
+.social-media a:hover{
+ background-color:transparent;
+ border:none
+}
+.social-works{margin-top:20px;}
+
+.social-works img{
+  width:25%;
+  height:auto;
+  background-color:#baaeae;
+}
+.social-works a:hover, .social-works:active{
+  background-color: transparent;
+  border:none;
+}
+.scroll-to-top i,.social-media i { 
+  color:#baaeae;
+}
+.social-media i { 
+  font-size:100%;
+  padding-left:10px;
+  margin-top:40px;
+}
+i.fa-facebook-square{padding-left:0;}
+
+.scroll-to-top i{
+  float:right;
+}
+
+/*Animation*/
+/*-----------------------------------*/
+.js--wp-2{
+  opacity:0;
+  animation-duration: 1s;
+}
+.js--wp-2.animate{
+  opacity: 1;
+}
+
+.js--wp-4{
+  -webkit-animation-duration: 1s;
+   animation-duration: 1s; 
+}

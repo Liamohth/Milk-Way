@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="Resource/css/style.css">
+  <link rel="stylesheet" type="text/css" href="Resource/css/queries.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <title>learning jQuery sticky navigation</title>
+</head>
+<body>
+  <header>
+    <nav> 
+    <div class="row">
+      <div class="logo">
+        <h4 class="white-logo">milky-way</h4>
+        <h4 class="black-logo">milky-way</h4>
+      </div>
+    
+        <ul class="main-nav js--main-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <a class="mobile-nav-icon js--mobile-nav-icon"><i class="fas fa-align-justify"></i></a>
+  </div>
+</nav>
+    <div class="hero-text">
+      <h1>what is happening in milky-way</h1>
+      <a class="btn btn-learn-more js-learn-more" href="#">Learn more</a>
+      <a class="btn btn-donate js--donate" href="#">donate</a>
+    </div>
+
+  </header>
+
+  <section class="first-section js--first-section" id="blog">
+    <div class="row">
+      <h2>standout from the crowd with your <br>retro fashionable jewelry!</h2>
+    </div>
+    <div class="row">
+      <div class="col span_1_of_3 box js--wp-4">
+        <div class="">
+        <img src="Resource/img/christmas.jpg" class="first-img js--wp-4">
+      </div>
+        <div class="first-content">
+        <h3>christmas ornament</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod dolore mollitia possimus ea nihil obcaecati quia labore harum eveniet temporibus ratione ut repudiandae quas qui, maxime fuga aperiam veritatis.</p>
+      </div>
+      </div>
+
+      <div class="col span_1_of_3 box">
+        <div class="js--wp-2">
+        <img src="Resource/img/necklace.jpg" class="first-img">
+      </div>
+        <div class="first-content">
+        <h3>Retro necklace</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod dolore mollitia possimus ea nihil obcaecati quia labore harum eveniet temporibus ratione ut repudiandae quas qui, maxime fuga aperiam veritatis.</p>
+      </div>
+    </div>
+
+      <div class="col span_1_of_3 box">
+        <img src="Resource/img/necklace-1.jpg" class="first-img">
+        <div class="first-content">
+        <h3>Retro necklace</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod dolore mollitia possimus ea nihil obcaecati quia labore harum eveniet temporibus ratione ut repudiandae quas qui, maxime fuga aperiam veritatis aperiam veritatis. veritatis aperiam</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="about-section js--about-section" id="about">
+    <div class="row">
+      <div class="col span-1-of-2">
+        <div class="about-content">
+          <a href="index.html">about</a>
+          <h3>Who we are</h3>
+          <p>Where you aim for beautiful jewelry, accessories and designer fragrances are just a click away. Now you can instantly choose from thousands of elegant new looks and traditional favorites. </p>
+        </div>
+      </div>
+      <div class="col span-1-of-2 js--wp-4">
+        <img class="about-img" src="Resource/img/diamond.jpg" alt="diamond jewelry">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="row">
+      <h2>Contact us with all your consent</h2>
+    </div>
+    <div class="row">
+      <form action="" method="POST" class="contact-us">
+        
+        <div class="row">
+          <div class="col span-1-of-2">
+        <label for="f-Name">First name</label>
+      <!-- </div>
+      <div class="col span-1-of-2"> -->
+        <input type="text" name="f-Name" id="f-Name" required>
+      </div>
+     
+      <div class="col span-1-of-2">
+        <label for="l-Name">last name</label>
+      <!-- </div>
+      <div class="col span-1-of-2"> -->
+        <input type="text" name="l-Name" id="l-Name" required>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col span-1-of-2">
+        <label for="eml">Email</label>
+      <!-- </div>
+      <div class="col span-1-of-2"> -->
+        <input type="email" name="eml" id="eml" required>
+      </div>
+      <div class="col span-1-of-2">
+        <label for="w-site">web site</label>
+      <!-- </div>
+      <div class="col span-1-of-2"> -->
+        <input type="text" name="w-site" id="w-site" required>
+      </div>
+      </div>
+      <div class="row">
+        <div class="message-send">
+        <label for="l-Name">Please tell us little bit about your</label>
+        <textarea name="message"></textarea>
+    </div>
+  </div>
+    <div class="row">
+      <input type="submit" value="send">
+    </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="footer-section js--footer-section">
+ <div class="row">
+  <div class="col span_1_of_3 footer-site-map">
+        <h3>Site Map</h3>
+        <div class="row">
+          <a href="#top">home</a>
+          <a href="#about">about</a>
+          <a href="#blog">blog</a>
+          <a href="#contact">contact</a>
+          <!-- <div class="col span_1_of_3 footer-link">
+          </div> -->
+<div class="site-map-div">
+          <div id="div-1"> </div>
+          <div id="div-2"> </div>
+          <div id="div-3"> </div>
+          <div id="div-4"> </div>
+</div>
+          <!-- <div class="col span_1_of_3">
+          </div> -->
+        </div>
+   </div>
+
+   <div class="col span_1_of_3 latest-articles">
+    <h3>latest Articles</h3>
+
+      <div class="content-box">
+        <div></div>
+        <h4>Programming</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+      <div class="content-box">
+        <div></div>
+        <h4>coding</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="content-box">
+        <div></div>
+        <h4>web site</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+  
+   </div>
+
+  <div class="col span_1_of_3">
+    <h3>our work</h3>
+    <a href="#" target="_blank"><div class="social-works">
+      <img src="Resource/img/necklace.jpg"></a>
+     
+     <a href="https://liamohth.github.io/Network-to-enhance-livingstandard/" target="_blank"><img src="Resource/img/FB_IMG_5.jpg"></a> 
+      <br>
+      <a href="#" target="_blank"><img src="Resource/img/2.jpg"></a>
+     
+      <a href="https://liamohth.github.io/Resume/" target="_blank"><img src="Resource/img/img1.jpg">
+    </div></a>
+
+    <div class="social-media">
+      <a href="#" class=""><i class="fab fa-facebook-square"></i></a>
+      <a href="#" class=""><i class="fab fa-instagram-square"></i></a>
+      <a href="#" class=""><i class="fab fa-twitter-square"></i></a>
+    </div>
+
+  <a href="#top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+ </div>
+
+</div>
+</section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="Resource/js/script.js"></script>
+</body>
+</html>
