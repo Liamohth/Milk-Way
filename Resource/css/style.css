@@ -15,20 +15,12 @@ html,body{
   max-width: 1140px;
   margin:0 auto;
 }
-section{ margin:80px 0;}
+section{ padding:80px 0;}
 img{
   width:100%;
   height:auto;
 }
-/* .clearFix{ zoom: 1;}
-.clearFix:after{
-  content: ".";
-  clear: both;
-  display:block;
-  height:0;
-  visibility: hidden;
 
-} */
 /*-----------------------------------*/
 /*Reuseable component*/
 /*-----------------------------------*/
@@ -36,19 +28,15 @@ h1,h2,h3{
   text-transform: uppercase;
   font-weight:300;
 }
-h3, h4{
-  font-size:100%;
-  color:#baaeae;
-}
 h1{
   font-size:200%;
   color:#f7f2f2;
 }
 h2{
 text-align: center;
-color:#2d2020;
 font-size:150%;
 margin-bottom:30px;
+color:#5d5d5d;
 }
 h2:after{
   content:" ";
@@ -60,6 +48,9 @@ h2:after{
   /* background-color:#c85151; */
   border-bottom: 5px dotted #191919;
 }
+h3, h4{
+  font-size:100%;
+}
 h3{
   font-style:italic;
   font-size:90%;
@@ -70,12 +61,12 @@ h3{
  border-radius:5px;
 }
 .btn-learn-more{
-  background-color:#99a8ce;
-  border: 1px solid #99a8ce;
+  background-color:#3b3b3b;
+  border: 1px solid #6e6e6e
 }
 .btn-donate{
   background-color:none;
-  border: 1px solid #99a8ce;
+  border: 1px solid #6e6e6e;
 }
 /*Link*/
 a:link, a:visited{
@@ -86,15 +77,15 @@ a:link, a:visited{
   transition: background-color 0.2s border 0.2s;
 }
 a:hover, a:active{
-  background-color:#5679d2;
-  border:1px solid rgba(255, 255, 255, 0.824);
+  background-color:#fff;
+  color:#2a2a2a;
+  /* border:1px solid #191919d2; */
 }
-/* .box{ padding:2%;} */
 /*-----------------------------------*/
 /*Header text*/
 /*-----------------------------------*/
 header{
-  background-image:linear-gradient(rgba(179, 173, 173, 0.507),rgba(179, 173, 173, 0.507)) ,url(img/milky-way.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.714)) ,url(img/milky-way.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -112,7 +103,7 @@ transform: translate(-50%, -50%);
 }
 .white-logo{
 float:left;
-margin:40px 50px;
+margin:55px 50px;
 text-transform: uppercase;
 width:auto;
 color:#fff;
@@ -143,7 +134,6 @@ color:#fff;
 .main-nav li a:link, .main-nav li a:visited{
   text-decoration:none;
   text-transform: uppercase;
-  color:#fff;
   letter-spacing:2px;
   padding: 8px 0;
   border-bottom:2px solid transparent;
@@ -151,8 +141,9 @@ color:#fff;
 }
 .main-nav li a:hover, .main-nav li a:active{
   border:none;
-  border-bottom:2px solid #191919;
+  border-bottom:2px solid #3b3b3b;
   background-color:transparent;
+  color:#fff;
 }
 /*mobile-nav*/
 .mobile-nav-icon{
@@ -172,15 +163,15 @@ display: none;
   left:0;
   width:100%;
   background-color:rgb(255, 255, 255);
-  color:#dad5d5;
+  /* color:#dad5d5; */
   z-index: 999;
 }
 .sticky-nav .main-nav{
   margin:20px 0;
 }
-.sticky-nav .main-nav li a:link, .main-nav li a:visited{
+.sticky-nav .main-nav li a:link, .sticky-nav .main-nav li a:visited{
   padding: 10px 0;
-  color:#dad5d5;
+  color:#5d5d5d;
 }
 .sticky-nav .white-logo{display: none;}
 .sticky-nav .black-logo{display:block;} 
@@ -189,20 +180,20 @@ display: none;
 /*first-section*/
 /*-----------------------------------*/
 .first-section{ 
-  color:#514f4f;
-  padding: 5%;
+  color:#dad5d5;
 }
 .first-section .box{
-  background-color: #dad5d5;
+  background-color: #6e6e6e;;
   border-radius:5px;
 }
 .first-section h3{
   padding: 20px 25px;
+  color:#2d2020;
 }
 .first-section p{
  line-height: 145%;
- padding:10px 0 10px 25px;
-}
+ padding: 0 25px 20px;
+} 
 
 /*-----------------------------------*/
 /*about-section*/
@@ -211,7 +202,6 @@ display: none;
 background-image:linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.714)), url(img/milky-way.jpg);
 padding:80px 0;
 }
-
 .about-content a{
 background-color: transparent;
 border:none;
@@ -229,40 +219,36 @@ border-radius: 5px;
 /*-----------------------------------*/
 /*contact-section*/
 /*-----------------------------------*/
-.contact-section{
- padding:80px 0;
-}
 .contact-us{
-  width:60%;
+  width:50%;
   margin:0 auto;
-  /* padding: 0 60px; */
   text-transform: capitalize;
 }
 label{
   display:block;
+  color:#5d5d5d;
 }
 input[type=text],
 input[type=email],
 textarea{
   background-color: #191919;
+  width:100%;
+  padding:2px;
+  border-radius: 5px;
   color:#fff;
 }
-.message-send{
-  margin-top:20px;
-}
 textarea{
-  width:91%;
-  height: 110px;
+  height: 100px;
 }
 input[type=submit]{
   float:right;
   margin-top:20px;
-  margin-right:62px;
-  width:15%;
+  width:20%;
   text-transform:uppercase;
   font-size: 90%;
   padding: 5px 0;
   cursor: pointer;
+  color:#f7f2f2;
 }
 /*-----------------------------------*/
 /*footer-section*/
@@ -294,7 +280,6 @@ border:none;
 .site-map-div div{
   width:50px;
   height:50px;
-  background-color: red;
   border:2px solid #fff;
   margin:55px 0 0 10px;
   border-radius:50%;
@@ -308,9 +293,6 @@ border:none;
 #div-3{background-color: #5d5d5d; }
 #div-4{background-color: #6e6e6e; }
 
-.latest-articles{
-  /* margin-left:20px; */
-}
 .content-box{
 position: relative;
 margin-top: 20px;
@@ -327,7 +309,8 @@ margin-top:10px;
   height:50px;
   background-color:#baaeae;
   position: absolute;
-  border-radius: 2px;
+  border: 1px solid #6e6e6e;
+  border-radius: 5px;
   top:0;
   left:0;
   margin-top:5px;
@@ -339,9 +322,11 @@ margin-top:10px;
 .social-works{margin-top:20px;}
 
 .social-works img{
-  width:25%;
+  width:30%;
   height:auto;
   background-color:#baaeae;
+  border: 1px solid #6e6e6e;
+  border-radius: 5px;
 }
 .social-works a:hover, .social-works:active{
   background-color: transparent;
